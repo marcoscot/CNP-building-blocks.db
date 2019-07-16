@@ -1,4 +1,4 @@
-# CNP-building-blocks.db
+## CNP-building-blocks.db
 R scripts for constructing a database on elemental composition (carbon, nitrogen and phosphorus) of food items
 
 the project is based on four steps:
@@ -16,11 +16,12 @@ operations described in this step corresponds to the white boxes visualized in F
 
 (3) conversion of nutrient data stored in food_nutrient_composition_db.xlsx into corresponding elemental contents (i.e. the output file includes details on carbon, nitrogen and phosphorus contents in 955 food items)
 - input: (i) **food_nutrient_composition_db.xlsx** (output of the previous step, it includes details on macromolecules and their constitutive building blocks for 955 food items; NA values and inconsistencies - i.e. lack of coherence between total contents of macromolecules and sums of the various molecules belonging to each macromolecule category - were removed by executing the scripts in step 2); (ii) **macronutrient_details.xlsx** (in particular, to import details on carbon and nitrogen concentration in the building block molecules of sugars, proteins and lipids - see columns "Component", "C" and "N" in the sheet "Element")
-- R script: **nutrients_to_CNP_db.R**
-- output: **food_elemental_composition_db.xlsx**
+- R script: the commands in the file **nutrients_to_CNP_db.R** allow creating the comprehensive database on carbon, nitrogen and phosporous contents in 955 food items
+- output: **food_elemental_composition_db.xlsx**, which represents the second part of the database (i.e. it summarized elemental composition of 955 food items)
+
+(4) calculation of elemental composition (carbon, nitrogen and phosphorous) in 13 large food categories (e.g. )
+- input: (i) **food_elemental_composition_db.xlsx** (file including elemental composition of an extremely detailed list of food items; it was created in the previous step 3); (ii) **food_data_background.xlsx**, which provides a classification
+- R script: the file **food_categories_average.R** is used to extract the list of categories and the subset of food items to consider for calculating the average carbon, nitrogen and phosphorous content in 13 large food categories
+- output: 
 
 
-
-(4)
-
-Last, the database for the elemental composition of the 13 food categories ("Food\_category\_CNP\_db.xlsx") is calculated by the "Food categories average.R" script, which extracts the list of categories and the subset of food items to average from the file "Food data background.xlsx".
