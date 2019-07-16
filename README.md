@@ -1,5 +1,5 @@
 ## CNP-building-blocks.db
-R scripts for constructing a database on elemental composition (carbon, nitrogen and phosphorus) of food items; the project is based on four steps
+R scripts for constructing a database on molecular and elemental composition (carbon, nitrogen and phosphorus) of food items (and 13 large food categories). Also a file including detailed description of all modifications made while executing the scripts is produced and used for technical validation. The project is based on four steps
 
 ### step 1
 original and incomplete data sets are combined for the describing the content of macronutrients and constitutive molecules (e.g. proteins with amino acids) in more than 950 food items
@@ -22,6 +22,6 @@ conversion of nutrient data stored in food_nutrient_composition_db.xlsx into cor
 
 ### step 4
 calculation of elemental composition (carbon, nitrogen and phosphorous) in 13 large food categories (e.g. vegetables, fruits, grains, seeds, meat and fish/seafood)
-- input: (i) **food_elemental_composition_db.xlsx** (file including elemental composition of an extremely detailed list of food items; it was created in the previous step 3); (ii) **food_data_background.xlsx**, which provides a classification
+- input: (i) **food_elemental_composition_db.xlsx** (file including elemental composition of an extremely detailed list of food items; it was created in the previous step 3); (ii) **food_data_background.xlsx**, which provides a classification of single items into one of the 13 large food categories
 - R script: the file **food_categories_average.R** is used to extract the subset of food items to consider for calculating the average carbon, nitrogen and phosphorous content in 13 large food categories; correspondence between single food items and the 13 categories is obtained trhough codes in the file food_data_background.xlsx
 - output: **food_category_CNP_db.xlsx**, which reports average values of carbon, nitrogen and phosphorus in 13 large food categories (all contents of the three elements are expressed as grams per 100 grams of edible portion, fresh weight)
