@@ -1,6 +1,6 @@
 ## CNP-building-blocks.db (source data and R scripts)
 
-The project includes source data and R scripts for constructing the database on molecular (i.e. macromolecules and their building blocks; e.g. total proteins and amino acids) and elemental composition (i.e. carbon, nitrogen and phosphorus) of 955 food items; such outputs are integrated by the file showing elemental composition of 13 large food categories. Also the file including detailed description of all modifications made while executing the scripts is produced and used for technical validation. The project is based on four steps
+The repository includes source data and R scripts for constructing the database on molecular (i.e. macromolecules and their building blocks; e.g. total proteins and amino acids) and elemental composition (i.e. carbon, nitrogen and phosphorus) of 955 food items; such outputs are integrated by the file showing elemental composition of 13 large food categories. Also the file including detailed description of all modifications made while executing the scripts is produced and used for technical validation. The project is based on four steps
 
 ### step 1
 original and incomplete data sets are combined for determining the content of macronutrients and constitutive molecules (e.g. proteins with amino acids) in more than 950 food items
