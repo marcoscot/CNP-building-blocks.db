@@ -7,7 +7,7 @@ Add_data <- function(your_file, file_to_add, value_to_add_location){
   all_names <- colnames(your_file)
   raw_data_OK <- file_to_add[,1]$Id
   raw_names <- colnames(file_to_add)
-  Food_Id <- c(your_file[,1])
+  Food_Id <- unlist(c(your_file[,1]))
   rr <- length(Food_Id)
   conta <- 1
   ## for every line k in file_to_add
